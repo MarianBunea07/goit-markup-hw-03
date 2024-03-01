@@ -1,0 +1,159 @@
+:root{
+    --primary-color: #434455;
+    --secondary-color: #2e2f42;
+    --button-background-color: #4d5ae5;
+    --visited-links: #b900b9;
+    --hover-color: #0606bd;
+    --heading-font-family: "Raleway", sans-serif;
+    --text-font-family: "Roboto", sans-serif;
+}
+
+*{
+    body {
+        font-family: var(--text-font-family);
+       color: var(--primary-color);
+    }
+    ul{
+        list-style-type: none;
+    }
+    .global-header .main nav a{
+        text-decoration: none;
+    }
+    /* Logo WEB */
+    .logo::before{
+        content: "WEB";
+        color: var(--button-background-color);
+        font-family: var(--heading-font-family);
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16667;
+ }
+ /* LOGO STUDIO */
+ .atribut-logo {
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+ }
+ .global-header .link-color a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--secondary-color);
+ }
+ .link-color a:visited{
+    color: var(--visited-links);
+ }
+ .global header .contacts-data a{
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--primary-color);
+ }
+ .hover-link:hover a{
+color: var(--hover-color);
+ }
+
+ /* Hero Section */
+ .hero-section{
+    background-color: var(--secondary-color);
+ }
+ .hero-title{
+    font-weight:700;
+    font: size 56px;
+    line-height: 1.07413em;
+    color: #fff;
+ }
+
+/* Information about button service */
+.btn-service {
+    background-color: var(--button-background-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-service:hover {
+    background-color: var(--button-background-color);
+}
+
+.btn-service:focus {
+    background-color: var(--button-background-color);
+}
+
+/* Information about What are We Doing */
+.feature-section {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    color: var(--secondary-color);
+}
+
+.feature-section-information {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111em;
+    color: var(--secondary-color);
+}
+
+/* Information about Our Team */
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    color: var(--secondary-color);
+}
+
+.job-team {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.short-description {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.footer-section {
+    background-color: var(--secondary-color);
+}
+
+.footer-logo::after {
+    content: "WEB";
+    color: var(--button-background-color);
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+}
+
+.footer-logo-studio {
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.short-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
