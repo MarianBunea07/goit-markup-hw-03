@@ -4,21 +4,43 @@
     --button-background-color: #4d5ae5;
     --visited-links: #b900b9;
     --hover-color: #0606bd;
+    --background-white-color: #fff;
     --heading-font-family: "Raleway", sans-serif;
     --text-font-family: "Roboto", sans-serif;
 }
-
+/* Setting all elements */
 *{
     body {
         font-family: var(--text-font-family);
        color: var(--primary-color);
     }
+}
     ul{
         list-style-type: none;
     }
     .global-header .main nav a{
         text-decoration: none;
     }
+    .container{
+        width: 1200px;
+    }
+    .section{
+        display:flex;
+        justify-content: center;
+    }
+    .container-nav-bar{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .link-color{
+        display: flex;
+        justify-content: space-evenly;
+        width: 500px;
+    }
+
+
+
     /* Logo WEB */
     .logo::before{
         content: "WEB";
@@ -38,6 +60,11 @@
     text-transform: uppercase;
     color: var(--secondary-color);
  }
+ .logo, .atribut-logo a{
+    text-decoration: none;
+ }
+
+ /* LINK */
  .global-header .link-color a{
     font-weight: 500;
     font-size: 16px;
@@ -47,25 +74,53 @@
  .link-color a:visited{
     color: var(--visited-links);
  }
- .global header .contacts-data a{
+
+
+
+/* CONTACTS */
+.mail{
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--primary-color)
+}
+.mail:hover
+.mail:focus{
+    color: var(--hover-color)
+}
+
+.tel {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: var(--primary-color);
- }
+}
+.tel:hover
+.tel:focus{
+    color: var(--hover-color)
+}
+
+
  .hover-link:hover a{
 color: var(--hover-color);
  }
 
  /* Hero Section */
  .hero-section{
+    display:flex;
     background-color: var(--secondary-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 500px;
  }
+
+
  .hero-title{
     font-weight:700;
     font: size 56px;
     line-height: 1.07413em;
-    color: #fff;
+    color: var(--background-white-color);
  }
 
 /* Information about button service */
@@ -78,8 +133,9 @@ color: var(--hover-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
-    color: #fff;
+    color: var(--background-white-color);
     cursor: pointer;
+    justify-content: center;
 }
 
 .btn-service:hover {
@@ -98,19 +154,67 @@ color: var(--hover-color);
     color: var(--secondary-color);
 }
 
-.feature-section-information {
+.feature-title-information {
     font-size: 16px;
     line-height: 1.5em;
 }
 
-.second-title {
+.feature-list{
+    display:flex;
+    gap:24px;
+    padding: 100px 70px;
+}
+
+/* Information about What are we doing Section */
+.section-what-we-doing {
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+.what-we-doing-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+
+.title-what-we-doing {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111em;
     color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 72px;
 }
 
 /* Information about Our Team */
+
+.section-our-team {
+    display: flex;
+    background-color: var(--background-color-section-our-team);
+    justify-content: center;
+    margin-top: 100px
+}
+
+.section-our-team-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 120px;
+
+}
+
+.title-our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111em;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 60px 35px;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -128,8 +232,16 @@ color: var(--hover-color);
     line-height: 1.5em;
 }
 
+
+/* Footer Section */
+
 .footer-section {
+    display: flex;
     background-color: var(--secondary-color);
+    justify-content: center;
+    height: 300px;
+    padding-left: 100px;
+    align-items: center;
 }
 
 .footer-logo::after {

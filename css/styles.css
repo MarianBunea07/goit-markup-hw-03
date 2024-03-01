@@ -3,7 +3,10 @@
     --secondary-color: #2e2f42;
     --button-background-color: #4d5ae5;
     --visited-links: #b900b9;
+    --background-color: #fff;
     --hover-color: #0606bd;
+    --footer-section-color: #2e2f42;
+    --border-color: #e7e9fc;
     --heading-font-family: "Raleway",
         sans-serif;
     --text-font-family: "Roboto",
@@ -26,6 +29,27 @@ ul {
     text-decoration: none;
 }
 
+.container{
+    width: 1200px;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.container-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-color {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
 /* Information about Logo */
 .logo::before {
     content: "WEB";
@@ -46,6 +70,12 @@ ul {
     color: var(--secondary-color);
 }
 
+.logo,
+.atribut-logo a {
+    text-decoration: none;
+}
+
+
 /* Information about links */
 .global-header .link-color a {
     font-weight: 500;
@@ -59,11 +89,28 @@ ul {
 }
 
 /* Information about contacts data */
-.global-header .contacts-data a {
+.mail {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.mail:hover,
+.mail:focus {
+    color: var(--hover-color);
+}
+
+.tel {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.tel:hover,
+.tel:focus {
+    color: var(--hover-color);
 }
 
 .hover-link:hover a {
@@ -71,6 +118,14 @@ ul {
 }
 
 /* Information about buttons style */
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
 .btn-filter {
     border: 1px solid #e7e9fc;
     border-radius: 4px;
@@ -99,6 +154,13 @@ ul {
 }
 
 /* Information about Cards */
+
+.project-card-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
 .project-card {
     border: 1em solid #e7e9fc;
     width: 360px;
@@ -113,23 +175,31 @@ ul {
     line-height: 1.2em;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+    padding-left: 16px;
 }
 
 .card-content-information {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left: 16px;
 }
 
 /* About footer section */
 
 .footer-section-portfolio {
-    background: #2e2f42;
+    background: var(--secondary-color);
+    display:flex;
+    justify-content: center;
+    height: 300px;
+    padding-left: 100px;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .footer-logo::after {
     content: "STUDIO";
-    color: #fff;
+    color: var(--background-color);
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -143,12 +213,12 @@ ul {
     line-height: 1.16667;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--background-color)
 }
 
 .footer-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: var(--background-color)
 }
